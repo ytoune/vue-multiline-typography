@@ -14,4 +14,4 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"vue-property-decorator":"GgIn","../MultilineTypography.vue":"lvD1"}],"EWEi":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("vue")),t=e(require("./App.vue")),u=document.querySelector("main");u&&new r.default({el:u,render:function(e){return e(t.default)}});
 },{"vue":"EjOG","./App.vue":"Js2s"}]},{},["EWEi"], null)
-//# sourceMappingURL=/demo.92627df0.js.map
+//# sourceMappingURL=/vue-multiline-typography/demo.92627df0.js.map
