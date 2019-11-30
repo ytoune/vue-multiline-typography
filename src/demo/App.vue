@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<MultilineTypography>
+		<MultilineText>
 			hoge
 			<hr />
 			<p>fuga</p>
@@ -9,13 +9,13 @@
 piyo
 piyo`
 			}}
-		</MultilineTypography>
+		</MultilineText>
 	</div>
 </template>
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import MultilineTypography from '../MultilineTypography.vue'
+import MultilineText from '../MultilineText.vue'
 
-@Component({ components: { MultilineTypography } })
+@Component({ components: { MultilineText } })
 export default class App extends Vue {}
 </script>
