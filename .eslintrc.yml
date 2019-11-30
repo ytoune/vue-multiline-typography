@@ -1,0 +1,25 @@
+parser: vue-eslint-parser
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  tsconfigRootDir: ./
+  sourceType: module
+  extraFileExtensions:
+    - .vue
+env:
+  es6: true
+  node: true
+extends:
+  - plugin:prettier/recommended
+  - plugin:vue/base
+  - prettier/@typescript-eslint
+plugins:
+  - prettier
+  - '@typescript-eslint'
+rules:
+  yoda: [error, always, { onlyEquality: true, exceptRange: true }]
+  prettier/prettier: [error, {
+    "singleQuote": true,
+    "useTabs": true,
+    "semi": false,
+    "trailingComma": all,
+  }]
