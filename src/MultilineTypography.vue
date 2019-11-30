@@ -11,7 +11,8 @@ export default Vue.extend({
 				if ('' === lines[lines.length - 1]?.trim()) lines.pop()
 				if (1 < lines.length) {
 					for (const line of lines) {
-						list.push({ text: line, isRootInsert: true, isComment: false })
+						line.trim() &&
+							list.push({ text: line, isRootInsert: true, isComment: false })
 						list.push(h('br', {}))
 					}
 					list.pop()
