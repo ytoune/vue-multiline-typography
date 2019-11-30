@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "ts-node scripts/prebuild.ts && tsc --build tsconfig.build.json",
+    "build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
     "release": "npm run build && ts-node scripts/release.ts"
   },
   "dependencies": {},
