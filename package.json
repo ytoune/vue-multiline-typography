@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "dev": "parcel src/demo/index.html",
     "build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
     "release": "npm run build && ts-node scripts/release.ts"
   },
@@ -15,10 +16,10 @@
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
     "@types/gh-pages": "^2.0.1",
-    "@types/node": "^12.12.14",
-    "@typescript-eslint/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/parser": "^2.9.0",
-    "@vue/component-compiler-utils": "^3.0.2",
+    "@types/node": "^12.12.16",
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "@vue/component-compiler-utils": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
@@ -28,7 +29,7 @@
     "parcel": "^1.12.4",
     "prettier": "^1.19.1",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.2",
+    "typescript": "^3.7.3",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.4",
     "vue-property-decorator": "^8.3.0",
