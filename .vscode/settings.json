@@ -1,6 +1,8 @@
 {
   "editor.formatOnSave": false,
-  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.enable": true,
   "eslint.nodePath": "node_modules",
   "eslint.options": {
@@ -8,8 +10,6 @@
     "resolvePluginsRelativeTo": "node_modules"
   },
   "eslint.workingDirectories": ["*"],
-  "editor.tabSize": 2,
-  "editor.insertSpaces": false,
   "editor.rulers": [80],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
