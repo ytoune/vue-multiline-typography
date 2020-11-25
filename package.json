@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "parcel src/demo/index.html",
     "build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
+    "build-local": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /",
     "release": "yarn build && ts-node scripts/release.ts"
   },
   "dependencies": {},
