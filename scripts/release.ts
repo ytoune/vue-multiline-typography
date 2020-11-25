@@ -85,7 +85,7 @@ const getMajorVersion = (version: string) => {
 }
 
 const publishDir = async ({ resolve, outdir, version }: Context) => {
-	await new Promise((r, j) =>
+	await new Promise<void>((r, j) =>
 		publish2git(
 			resolve(outdir),
 			{
@@ -98,12 +98,12 @@ const publishDir = async ({ resolve, outdir, version }: Context) => {
 				message: `Release v${version}!!`,
 				// tag: `v${version}`,
 			},
-			e => (e ? j(e) : r()),
+			(e) => (e ? j(e) : r()),
 		),
 	)
 }
 
-main().catch(x => {
+main().catch((x) => {
 	console.error(x)
 	process.exit(1)
 })
