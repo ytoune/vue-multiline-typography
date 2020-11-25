@@ -36,5 +36,8 @@
     "vue-hot-reload-api": "2.3.4",
     "vue-property-decorator": "9.1.2",
     "vue-template-compiler": "2.6.12"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
