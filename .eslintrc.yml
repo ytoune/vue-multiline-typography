@@ -12,7 +12,6 @@ extends:
   - plugin:prettier/recommended
   - plugin:vue/base
   - prettier
-  - prettier/@typescript-eslint
 plugins:
   - prettier
   - '@typescript-eslint'
