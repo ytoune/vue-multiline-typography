@@ -1,4 +1,4 @@
-<template>
+<template type="html">
 	<div>
 		<p>
 			<MultilineText>
@@ -15,19 +15,22 @@
 	</div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { defineComponent } from 'vue'
 import MultilineText from '../MultilineText.vue'
 
-@Component({ components: { MultilineText } })
-export default class App extends Vue {
-	get text() {
-		return `
+export default defineComponent({
+	name: 'App',
+	components: { MultilineText },
+	computed: {
+		text() {
+			return `
 溢れた孤独に触れた指先
 ここにはずっと
 欲しがっていたものがあるの
 何が大切かなんて
 もうわかっているの本当は
-		`
-	}
-}
+`
+		},
+	},
+})
 </script>

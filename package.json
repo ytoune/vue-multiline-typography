@@ -8,9 +8,13 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "parcel src/demo/index.html",
-    "build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
-    "build-local": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /",
+    "dev": "vite",
+    "build": "rimraf dist && vue-tsc --noEmit && vite build --base /vue-multiline-typography/ && mv src/demo/dist ./",
+    "build-local": "rimraf dist && vite build --base / && mv src/demo/dist ./",
+    "serve": "vite preview",
+    "// dev": "parcel src/demo/index.html",
+    "// build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
+    "// build-local": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /",
     "release": "yarn build && ts-node scripts/release.ts"
   },
   "dependencies": {},
@@ -20,24 +24,20 @@
     "@types/node": "15.0.2",
     "@typescript-eslint/eslint-plugin": "4.22.1",
     "@typescript-eslint/parser": "4.22.1",
-    "@vue/component-compiler-utils": "3.2.0",
+    "@vitejs/plugin-vue": "1.2.2",
+    "@vue/compiler-sfc": "3.0.11",
     "eslint": "7.26.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-vue": "7.9.0",
     "fs-extra": "10.0.0",
     "gh-pages": "3.1.0",
-    "parcel": "2.0.0-beta.2",
     "prettier": "2.3.0",
+    "rimraf": "3.0.2",
     "ts-node": "9.1.1",
     "typescript": "4.2.4",
-    "vue": "2.6.12",
-    "vue-class-component": "7.2.6",
-    "vue-hot-reload-api": "2.3.4",
-    "vue-property-decorator": "9.1.2",
-    "vue-template-compiler": "2.6.12"
-  },
-  "resolutions": {
-    "node-forge": "0.10.0"
+    "vite": "2.2.4",
+    "vue": "3.0.11",
+    "vue-tsc": "0.1.2"
   }
 }

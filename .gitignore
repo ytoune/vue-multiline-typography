@@ -1,5 +1,4 @@
-dist/
-node_modules/
-.cache/
-scripts/sandbox.ts*
-yarn-error.log*
+/dist/
+/node_modules/
+/scripts/sandbox.ts*
+/yarn-error.log*
