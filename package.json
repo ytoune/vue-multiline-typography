@@ -15,7 +15,8 @@
     "// dev": "parcel src/demo/index.html",
     "// build": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /vue-multiline-typography/",
     "// build-local": "ts-node scripts/prebuild.ts && parcel build src/demo/index.html --public-url /",
-    "release": "yarn build && ts-node scripts/release.ts"
+    "release": "yarn build && yarn ts-node scripts/release.ts",
+    "ts-node": "node --require esbuild-register"
   },
   "dependencies": {},
   "devDependencies": {
@@ -26,6 +27,7 @@
     "@typescript-eslint/parser": "4.22.1",
     "@vitejs/plugin-vue": "1.2.2",
     "@vue/compiler-sfc": "3.0.11",
+    "esbuild-register": "2.5.0",
     "eslint": "7.26.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
@@ -34,7 +36,6 @@
     "gh-pages": "3.1.0",
     "prettier": "2.3.0",
     "rimraf": "3.0.2",
-    "ts-node": "9.1.1",
     "typescript": "4.2.4",
     "vite": "2.2.4",
     "vue": "3.0.11",
